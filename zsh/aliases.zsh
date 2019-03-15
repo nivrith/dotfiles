@@ -14,6 +14,10 @@ alias o="open"
 alias oo="open ."
 alias e="$EDITOR"
 
+# Git
+alias pull="git pull"
+alias push="git push"
+alias checkout="git checkout"
 
 # Download file and save it with filename of remote file
 alias get="curl -O -L"
