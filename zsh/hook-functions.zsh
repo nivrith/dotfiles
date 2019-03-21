@@ -4,11 +4,10 @@
 # a .nvmrc file in the directory. Also, revert to default
 # version when entering a directory without .nvmrc
 #
-enter_directory() {
-if [[ $PWD == $PREV_PWD ]]; then
-   return
-fi
-
+nvm_autouse() {
+# if [[ $PWD == $PREV_PWD ]]; then
+#    return
+# fi
 
 PREV_PWD=$PWD
 if [[ -f ".nvmrc" ]]; then
@@ -19,6 +18,5 @@ elif [[ $NVM_DIRTY = true ]]; then
    NVM_DIRTY=false
 fi
 }
-
-
-chpwd_functions=(${chpwd_functions[@]} "enter_directory")
+nvm_autouse
+chpwd_functions=(${chpwd_functions[@]} "nvm_autouse")
