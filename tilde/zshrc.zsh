@@ -138,3 +138,5 @@ alias startvm="VBoxManage startvm 'lumi-dev-box'"
 alias pull="git pull"
 alias push="git push"
 alias checkout="git checkout"
+
+source ~/dotfiles/zsh/hook-functions.zsh
