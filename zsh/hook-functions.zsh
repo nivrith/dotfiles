@@ -11,7 +11,7 @@ nvm_autouse() {
 
 PREV_PWD=$PWD
 if [[ -f ".nvmrc" ]]; then
-   nvm use
+   nvm use &>/dev/null
    NVM_DIRTY=true
 elif [[ $NVM_DIRTY = true ]]; then
    nvm use default
