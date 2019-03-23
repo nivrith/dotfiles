@@ -21,3 +21,34 @@ export PATH
 
 export PATH=$PATH:~/.composer/vendor/bin
 export PATH=$PATH:~/Applications/XAMPP/bin
+
+if [[ -f /snap/bin ]]; then
+  export PATH=$PATH:/snap/bin
+fi
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+
+export PATH=$PATH:~/.local/bin
+
+if [[ -f $HOME/Library/Haskell/bin ]]; then
+  export PATH="$HOME/Library/Haskell/bin:$PATH"
+fi
+
+
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export PATH=$PATH:~/.composer/vendor/bin
+
+if [[ -f ~/Applications/XAMPP/bin ]]; then
+  export PATH=$PATH:~/Applications/XAMPP/bin
+fi
+

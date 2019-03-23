@@ -10,7 +10,7 @@ source ~/dotfiles/zsh/key-bindings.zsh
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/nivrith/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -81,7 +81,7 @@ plugins=(
   osx
 )
 
-source $ZSH/oh-my-zsh.sh
+ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -113,24 +113,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
 
 alias python=python3
 
-export PATH=$PATH:~/.local/bin
-export PATH="$HOME/Library/Haskell/bin:$PATH"
 
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export PATH=$PATH:~/.composer/vendor/bin
-export PATH=$PATH:~/Applications/XAMPP/bin
 
 alias serve=". ~/.shell_scripts/serve_lumi.sh"
 alias serve:qa="gulp serve:qa"

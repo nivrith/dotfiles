@@ -30,6 +30,5 @@ zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
 
 # Autocompletion for git-friendly
-fpath=($(brew --prefix)/share/zsh/functions $fpath)
 autoload -Uz _git && _git
 compdef __git_branch_names branch br
