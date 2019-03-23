@@ -19,10 +19,7 @@ PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin'
 
 export PATH
 
-export PATH=$PATH:~/.composer/vendor/bin
-export PATH=$PATH:~/Applications/XAMPP/bin
-
-if [[ -f /snap/bin ]]; then
+if [[ -d "/snap/bin" ]]; then
   export PATH=$PATH:/snap/bin
 fi
 
@@ -39,7 +36,7 @@ export PATH
 
 export PATH=$PATH:~/.local/bin
 
-if [[ -f $HOME/Library/Haskell/bin ]]; then
+if [[ -d "$HOME/Library/Haskell/bin" ]]; then
   export PATH="$HOME/Library/Haskell/bin:$PATH"
 fi
 
@@ -48,7 +45,7 @@ fi
 
 export PATH=$PATH:~/.composer/vendor/bin
 
-if [[ -f ~/Applications/XAMPP/bin ]]; then
+if [[ -d "~/Applications/XAMPP/bin" ]]; then
   export PATH=$PATH:~/Applications/XAMPP/bin
 fi
 
