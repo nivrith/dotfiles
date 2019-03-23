@@ -49,3 +49,15 @@ if [[ -d "~/Applications/XAMPP/bin" ]]; then
   export PATH=$PATH:~/Applications/XAMPP/bin
 fi
 
+if [[ -d "/usr/local/opt/php@7.2/bin" ]]; then
+  export PATH=$PATH:/usr/local/opt/php@7.2/bin
+  export PATH=$PATH:/usr/local/opt/php@7.2/sbin
+fi
+
+if [[ -f "${HOME}/.iterm2_shell_integration.zsh" ]]; then
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+fi
+
+if [[ -d "~/.spark" ]]; then
+  export PATH=$PATH:~/.spark
+fi

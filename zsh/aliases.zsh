@@ -26,3 +26,8 @@ alias get="curl -O -L"
 gr() {
   cd "./$(git rev-parse --show-cdup 2>/dev/null)" 2>/dev/null
 }
+
+
+if [[ -d "~/Documents/Files/Unclutter\ Files/polyrithm" ]]; then
+  alias polyrithm="cd ~/Documents/Files/Unclutter\ Files/polyrithm"
+fi
