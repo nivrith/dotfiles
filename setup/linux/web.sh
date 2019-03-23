@@ -70,22 +70,22 @@ snap install slack --classic
 
 
 # Node
-# sudo rm -r ~/.nvm
-# sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh)"
-# sudo chown -R $USER:$USER ~/.nvm
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# nvm install --lts 
+sudo rm -r ~/.nvm
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh)"
+sudo chown -R $USER:$USER ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install --lts 
 
-# npm install -g gulp
-# npm install -g bower
-# npm install -g oclif
-# npm install -g eslint
-# npm install -g yarn
-# npm install -g @angular/cli
-# npm install -g less
+npm install -g gulp
+npm install -g bower
+npm install -g oclif
+npm install -g eslint
+npm install -g yarn
+npm install -g @angular/cli
+npm install -g less
 
 sudo apt auto-remove -y
 sh ./zsh.sh
 python3 ~/dotfiles/install.py
-# reboot
+sudo shutdown -r
