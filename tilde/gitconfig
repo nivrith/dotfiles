@@ -9,11 +9,10 @@
 
 [core]
 	editor = code --wait
-	pager = git-pager
 	autocrlf = false
 	safecrlf = false
 	mergeoptions = --no-edit
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/nivrith/.gitignore_global
 	quotepath = false
 	# Enable parallel index preload for operations like git diff
 	preloadindex = true
@@ -121,3 +120,8 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Nivrith
+	email = nivrith@lumi.media
+[commit]
+	template = /Users/nivrith/.stCommitMsg
