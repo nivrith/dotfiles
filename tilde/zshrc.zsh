@@ -12,9 +12,11 @@ source ~/dotfiles/zsh/key-bindings.zsh
 # Path to your oh-my-zsh installation.
 if [[ -d "/home/$USER/.oh-my-zsh" ]]; then
   export ZSH="/home/$USER/.oh-my-zsh"
-elif [[ -d "~/.oh-my-zsh" ]]; then
-  export ZSH="~/.oh-my-zsh"
+elif [[ -d "/Users/$USER/.oh-my-zsh" ]]; then
+  export ZSH="/Users/$USER/.oh-my-zsh"
 fi
+# # Path to your oh-my-zsh installation.
+# export ZSH="/Users/nivrith/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
