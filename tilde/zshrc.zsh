@@ -88,6 +88,7 @@ plugins=(
   npm
   vscode
   jira
+  web-search
 )
 
  source $ZSH/oh-my-zsh.sh
