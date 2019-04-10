@@ -84,6 +84,10 @@ plugins=(
   bundler
   dotenv
   osx
+  node
+  npm
+  vscode
+  jira
 )
 
  source $ZSH/oh-my-zsh.sh
