@@ -28,6 +28,8 @@ gr() {
 }
 
 
-if [[ -d "~/Documents/Files/Unclutter\ Files/polyrithm" ]]; then
-  alias polyrithm="cd ~/Documents/Files/Unclutter\ Files/polyrithm"
-fi
+
+alias polyrithm="cd ~/Documents/files/polyrithm"
+alias lumi="cd ~/Documents/files/lumi"
+alias files="cd ~/Documents/files"
+

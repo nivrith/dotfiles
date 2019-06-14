@@ -67,3 +67,5 @@ export GIT_FRIENDLY_NO_BUNDLE=true
 
 # Ripgrep config file location
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+export JIRA_URL="https://hubmakers.atlassian.net"

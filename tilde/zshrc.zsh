@@ -1,9 +1,9 @@
 
 source ~/dotfiles/zsh/env.zsh
 source ~/dotfiles/zsh/path.zsh
-source ~/dotfiles/zsh/aliases.zsh
 source ~/dotfiles/zsh/completions.zsh
 source ~/dotfiles/zsh/key-bindings.zsh
+source ~/dotfiles/zsh/aliases.zsh
 
 
 # If you come from bash you might have to change your $PATH.

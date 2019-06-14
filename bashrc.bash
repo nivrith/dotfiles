@@ -6,7 +6,7 @@ source ~/dotfiles/bash/aliases
 # a .nvmrc file in the directory. Also, revert to default
 # version when entering a directory without .nvmrc
 #
-enter_directory() {
+nvm_autouse() {
 if [[ $PWD == $PREV_PWD ]]; then
    return
 fi
@@ -22,5 +22,6 @@ elif [[ $NVM_DIRTY = true ]]; then
 fi
 }
 
+nvm_autouse &>/dev/null
 
-export PROMPT_COMMAND=enter_directory
+export PROMPT_COMMAND=nvm_autouse
