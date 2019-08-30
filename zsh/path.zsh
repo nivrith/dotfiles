@@ -61,3 +61,5 @@ fi
 if [[ -d "~/.spark" ]]; then
   export PATH=$PATH:~/.spark
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -23,9 +23,9 @@ alias checkout="git checkout"
 alias get="curl -O -L"
 
 # Cd to Git repository root folder
-gr() {
-  cd "./$(git rev-parse --show-cdup 2>/dev/null)" 2>/dev/null
-}
+# gr() {
+#   cd "./$(git rev-parse --show-cdup 2>/dev/null)" 2>/dev/null
+# }
 
 
 
@@ -33,3 +33,5 @@ alias polyrithm="cd ~/Documents/files/polyrithm"
 alias lumi="cd ~/Documents/files/lumi"
 alias files="cd ~/Documents/files"
 
+
+alias treex='ls -R | grep "^[.]/" | sed -e "s/:$//" -e "s/[^\/]*\//--/g" -e "s/^/   |/"'
