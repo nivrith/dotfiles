@@ -123,7 +123,13 @@
 [user]
 	email = nivrithgomatam@gmail.com
 	name = Nivrith
+	signingKey = ""
 	# name = Nivrith
 	# email = nivrith@lumi.media
 [commit]
 	template = /Users/nivrith/.stCommitMsg
+	gpgSign = false
+[gpg]
+	program = gpg
+[tag]
+	forceSignAnnotated = false

@@ -1,4 +1,7 @@
 # Prepend $PATH without duplicates
+
+ZSH_DISABLE_COMPFIX=true
+
 function _prepend_path() {
 	if ! $( echo "$PATH" | tr ":" "\n" | grep -qx "$1" ) ; then
 		PATH="$1:$PATH"

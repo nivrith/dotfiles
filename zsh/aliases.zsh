@@ -31,6 +31,7 @@ alias get="curl -O -L"
 
 alias polyrithm="cd ~/Documents/files/polyrithm"
 alias lumi="cd ~/Documents/files/lumi"
+alias lw="cd ~/Documents/files/lumi/lumi.web"
 alias files="cd ~/Documents/files"
 
 

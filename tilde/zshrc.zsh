@@ -136,3 +136,4 @@ alias push="git push"
 alias checkout="git checkout"
 
 source ~/dotfiles/zsh/hook-functions.zsh
+[ -f "/Users/lumi/.ghcup/env" ] && source "/Users/lumi/.ghcup/env" # ghcup-env
